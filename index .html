@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hablá con el docente del Profesorado de Agronomía</title>
+<meta name="description" content="Humano digital que cuenta cómo es el Profesorado de Agronomía de General San Martín, Chaco: 4 años, presencial.">
+<style>
+:root{--pizarra:#0f7a80;--marco:#0a3d3a;--tiza:#fdfcf7;--violeta:#8f6bb8;--madera:#a67c52;--papel:#f6f1e4;--texto:#1d2b2a}
+@media (prefers-color-scheme:dark){:root{--papel:#10201f;--texto:#eef3ef}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--papel);color:var(--texto);font:18px/1.55 "Trebuchet MS","Segoe UI",system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:24px 20px 56px}
+.pizarron{background:var(--pizarra);border:12px solid var(--marco);border-bottom-color:var(--madera);border-radius:6px;color:var(--tiza);padding:28px 28px 22px;display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:28px;align-items:center}
+.pizarron img{width:100%;height:auto;border-radius:4px;background:#fff}
+h1{font:700 clamp(1.7rem,4.2vw,2.6rem)/1.15 "Georgia","Times New Roman",serif;margin:0 0 12px;letter-spacing:.01em}
+.pizarron p{margin:0 0 10px;max-width:46ch}
+.datos{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;padding:0;list-style:none}
+.datos li{border:2px dashed var(--tiza);border-radius:999px;padding:4px 14px;font-weight:700}
+section{margin-top:34px}
+h2{font:700 1.5rem/1.2 "Georgia",serif;margin:0 0 12px;color:var(--violeta)}
+.anios{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.anio{border-left:6px solid var(--violeta);padding:6px 14px}
+.anio h3{margin:0 0 4px;font-size:1.05rem}
+.anio p{margin:0;font-size:.97rem}
+.nota{font-size:.9rem;border-top:2px solid var(--madera);padding-top:12px;max-width:70ch}
+.preguntas{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0}
+.preguntas li{background:var(--violeta);color:#fff;border-radius:8px;padding:6px 12px;font-size:.95rem}
+@media (max-width:720px){.pizarron{grid-template-columns:1fr;padding:18px}.pizarron img{max-width:240px;margin:0 auto;display:block}}
+</style>
+</head>
+<body>
+<main>
+  <div class="pizarron">
+    <img src="docente.jpg" alt="Dibujo de un docente sonriente señalando el pizarrón frente a sus alumnos">
+    <div>
+      <h1>Hablá con el docente del Profesorado de Agronomía</h1>
+      <p>Soy un docente digital. Te cuento cómo es la carrera en General San Martín, Chaco, y respondo tus preguntas, por voz o por escrito.</p>
+      <p>Apretá el botón de abajo a la derecha para empezar a charlar.</p>
+      <ul class="datos"><li>4 años</li><li>Presencial</li><li>Nivel terciario</li></ul>
+    </div>
+  </div>
+
+  <section>
+    <h2>Las prácticas, año por año</h2>
+    <div class="anios">
+      <div class="anio"><h3>Primer año</h3><p>Prácticas en organizaciones y asociaciones civiles.</p></div>
+      <div class="anio"><h3>Segundo año</h3><p>Prácticas en una EFA: observación de clases, ayudantía de permanencia y apoyo en las actividades institucionales.</p></div>
+      <div class="anio"><h3>Tercer año</h3><p>En la EFA, con clases a cargo en nivel básico y orientado, más permanencia y actividades institucionales.</p></div>
+      <div class="anio"><h3>Cuarto año</h3><p>Pre-residencia (EFA elegida por el docente) y residencia, con más carga horaria y permanencia a cargo solo.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Preguntale, por ejemplo</h2>
+    <ul class="preguntas">
+      <li>¿Cuánto dura la carrera?</li>
+      <li>¿Es presencial?</li>
+      <li>¿Qué hago en primer año?</li>
+      <li>¿Qué es la residencia?</li>
+      <li>¿Qué es una EFA?</li>
+    </ul>
+  </section>
+
+  <p class="nota">Este docente es un asistente digital, no habla en nombre oficial de la institución. El marco normativo es la Res. 1978/2021 del Ministerio de Educación del Chaco (diseño curricular Res. 276/2017, plan de estudios Res. 6299/2017). Los datos de duración, modalidad y prácticas los aportó el equipo del proyecto. Para inscripción, fechas, costos o contacto, consultá directamente en el profesorado.</p>
+</main>
+<elevenlabs-convai agent-id="agent_6101m5dhyt1eedb8m34jat3qam83"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
